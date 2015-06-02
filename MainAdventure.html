@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<link rel="icon" type="png" href="Resources/Icon.png"/>
+			<link rel="stylesheet" type="css" href="main.css">
+			<title>
+				 AJC Interactive Adventure
+			</title>
+		</head>
+		<body onLoad="Load.loadComponents()">
+			<div id="startAdventure">
+				<h1 id="startGameHeader" class="noSelect">
+					Welcome to the <i>Quest of AJC</i> Interactive Adventure!
+				</h1>
+			
+				<div id="startButton" class="noSelect selectCursor" onClick="Load.loadAdventure()">
+					<p>
+						Begin Adventure
+					</p>
+				</div>
+			</div>
+			
+			<div id="storyStepFrame" class="noSelect">
+				<div id="storyImage">
+				</div>
+				<p id="dateHeader">
+				</p>
+				<p id="stepInfo">
+				</p>
+				<div id="nextButton" class="noSelect selectCursor" onClick="Story.advanceStep()">
+				</div>
+				<div id="backButton" class="noSelect selectCursor" onClick="Story.backStep()">
+				</div>
+			</div>
+			
+			<script src="jQuery.js">
+			</script>
+			<script src="adventureMechanics.js">
+			</script>
+		</body>
+	</html>
